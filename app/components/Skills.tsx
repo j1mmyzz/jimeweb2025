@@ -16,10 +16,10 @@ const SkillCard: React.FC<{
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, x: direction === "left" ? -50 : 50 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.5 }}
-      className="bg-white p-6 rounded-lg shadow-md"
+      initial={{ opacity: 0, x: direction === "left" ? -300 : 300 }}
+      whileInView={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.25 }}
+      className="bg-white p-6 rounded-2xl shadow-md"
     >
       <h3 className="text-2xl font-semibold mb-2">{title}</h3>
       <p>{description}</p>

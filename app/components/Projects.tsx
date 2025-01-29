@@ -17,9 +17,9 @@ const ProjectCard: React.FC<{
     <motion.div
       ref={ref}
       initial={{ opacity: 0, scale: 0.9 }}
-      animate={inView ? { opacity: 1, scale: 1 } : {}}
+      whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-lg shadow-md overflow-hidden"
+      className="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-500 hover:scale-150"
     >
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
