@@ -3,11 +3,16 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-scroll";
+import { SiChakraui } from "react-icons/si";
+import { FaGithub, FaJava, FaHtml5, FaCss3, FaReact } from "react-icons/fa";
+import { BiLogoJavascript } from "react-icons/bi";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 const ProjectCard: React.FC<{
   title: React.ReactNode;
   description: string;
-}> = ({ title, description }) => {
+  languagesAndGithub: React.ReactNode;
+}> = ({ title, description, languagesAndGithub }) => {
   const [ref] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -23,7 +28,10 @@ const ProjectCard: React.FC<{
     >
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <div className="text-gray-600">{description}</div>
+        <div className="text-gray-600 mb-4">{description}</div>
+        <div className="flex flex-row items-center text-2xl space-x-3">
+          {languagesAndGithub}
+        </div>
       </div>
     </motion.div>
   );
@@ -49,6 +57,21 @@ const Projects = () => {
               </span>
             }
             description="A personal website showcasing my skills and projects! You are viewing right now :)."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaReact className="text-blue-500 text-2xl" />
+                  <RiNextjsFill className="text-black text-2xl" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/jimeweb2025"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
 
           <ProjectCard
@@ -63,8 +86,24 @@ const Projects = () => {
                 </a>
               </span>
             }
-            description="A small memory game created for my web devleopment class in high school."
+            description="A small memory game created for my web development class in high school."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
+                  <FaHtml5 className="text-orange-600 text-2xl" />
+                  <FaCss3 className="text-blue-500 text-2xl" />
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/Memory-Match"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -74,7 +113,21 @@ const Projects = () => {
               </span>
             }
             description="The official homepage for the Enterprise Management Team at NYC Public Schools (Prev. NYC DOE)."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaReact className="text-blue-500 text-2xl" />
+                  <RiNextjsFill className="text-black text-2xl" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
+                  <SiChakraui className="text-teal-500 text-2xl" />
+                </div>
+                <a href="https://github.com/j1mmyzz/noc-nycboe" target="_blank">
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -87,8 +140,24 @@ const Projects = () => {
                 </a>
               </span>
             }
-            description="A simple HTML page devleoped for my internship at ETA Media, aimed to educate users on basic cybersecurity and online safety."
+            description="A simple HTML page developed for my internship at ETA Media, aimed to educate users on basic cybersecurity and online safety."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
+                  <FaHtml5 className="text-orange-600 text-2xl" />
+                  <FaCss3 className="text-blue-500 text-2xl" />
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/Empire-Cybersecurity-Game"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -102,7 +171,20 @@ const Projects = () => {
               </span>
             }
             description="Small project created while learning JavaScript. You get access to a very small bird catalog."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
+                  <FaHtml5 className="text-orange-600 text-2xl" />
+                  <FaCss3 className="text-blue-500 text-2xl" />
+                </div>
+                <a href="https://github.com/j1mmyzz/JimeBird" target="_blank">
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -112,7 +194,21 @@ const Projects = () => {
               </span>
             }
             description="My AP CSA Final Project. It's a Java program that generates a maze and finds the optimal path to solve it. The program uses Dijkstra's and A* algorithms to find the optimal path."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/PathfindingGUI"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -126,7 +222,21 @@ const Projects = () => {
               </span>
             }
             description="A responsive webpage designed to help users organize their lives through nutritional recipes and workout plans. TechCodes Hackathon Submission."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaReact className="text-blue-500 text-2xl" />
+                  <RiNextjsFill className="text-black text-2xl" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
+                  <SiChakraui className="text-teal-500 text-2xl" />
+                </div>
+                <a href="https://github.com/fe-i/nutrifit" target="_blank">
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -136,7 +246,21 @@ const Projects = () => {
               </span>
             }
             description="Simple restaurant app created using Java Swing."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/RestaurantOrderingApp"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
+
           <ProjectCard
             title={
               <span>
@@ -146,6 +270,19 @@ const Projects = () => {
               </span>
             }
             description="Plants Vs. Zombies clone made with Java Swing."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                </div>
+                <a
+                  href="https://github.com/j1mmyzz/VegetablesVsMummies"
+                  target="_blank"
+                >
+                  <FaGithub className="text-black text-2xl" />
+                </a>
+              </div>
+            }
           />
         </div>
       </div>
