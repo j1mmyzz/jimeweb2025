@@ -8,7 +8,7 @@ const ProjectCard: React.FC<{
   title: React.ReactNode;
   description: string;
 }> = ({ title, description }) => {
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
