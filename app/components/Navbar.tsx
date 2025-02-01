@@ -63,7 +63,7 @@ const Navbar = () => {
             to="hero"
             smooth={true}
             duration={500}
-            className="text-2xl font-bold cursor-pointer"
+            className="text-2xl font-bold cursor-pointer hover:scale-105"
           >
             Jimmy Zheng
           </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer hover:text-purple-300"
             >
               Skills
             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
               to="experience"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer hover:text-purple-300"
             >
               Experience
             </Link>
@@ -88,12 +88,12 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer hover:text-purple-300"
             >
               Projects
             </Link>
             <a
-              className="cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer hover:text-purple-300"
               href="https://drive.google.com/file/d/1h-WT08z5IdUqxzDKr8aivj8WeeKyQObR/view"
               target="_blank"
             >
@@ -140,7 +140,7 @@ const Navbar = () => {
                   to="skills"
                   smooth={true}
                   duration={500}
-                  className="block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
                   onClick={toggleMenu}
                 >
                   Skills
@@ -151,7 +151,7 @@ const Navbar = () => {
                   to="experience"
                   smooth={true}
                   duration={500}
-                  className="block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
                   onClick={toggleMenu}
                 >
                   Experience
@@ -162,7 +162,7 @@ const Navbar = () => {
                   to="projects"
                   smooth={true}
                   duration={500}
-                  className="block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
                   onClick={toggleMenu}
                 >
                   Projects
@@ -170,7 +170,7 @@ const Navbar = () => {
               </motion.div>
               <motion.div variants={menuItemVariants}>
                 <a
-                  className="block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
                   href="https://drive.google.com/file/d/1h-WT08z5IdUqxzDKr8aivj8WeeKyQObR/view"
                   target="_blank"
                 >
