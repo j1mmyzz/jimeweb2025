@@ -19,8 +19,8 @@ const Hero = () => {
         <h1 className="text-5xl font-bold mb-8">Jimmy Zheng</h1>
         <p className="text-xl mb-8">Web Developer | Designer | Student</p>
         <p className="mb-8 w-3/4">
-          Hello, I'm Jimmy! I'm Brooklyn based, self-taught developer, and I'm
-          currently studying computer science at Binghamton University.{" "}
+          Hello, I&apos;m Jimmy! I'm Brooklyn based, self-taught developer, and
+          I&apos;m currently studying computer science at Binghamton University.{" "}
         </p>
         <div className="w-32 flex flex-row justify-between">
           <a
