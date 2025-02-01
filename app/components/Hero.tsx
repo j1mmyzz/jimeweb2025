@@ -1,27 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FaArrowCircleDown } from "react-icons/fa";
+import { ImMail4 } from "react-icons/im";
 
 const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center pt-20"
+      className="min-h-screen flex items-center justify-center pt-15"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center"
+        className="flex flex-col justify-center items-center text-center"
       >
-        <h1 className="text-5xl font-bold mb-4">Jimmy Zheng</h1>
+        <h1 className="text-5xl font-bold mb-8">Jimmy Zheng</h1>
         <p className="text-xl mb-8">Web Developer | Designer | Student</p>
-        <a
-          href="#skills"
-          className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300"
-        >
-          Explore My Work
-        </a>
+        <p className="mb-8 w-3/4">
+          Hello, I'm Jimmy! I'm Brooklyn based, self-taught developer, and I'm
+          currently studying computer science at Binghamton University.{" "}
+        </p>
+        <div className="w-32 flex flex-row justify-between">
+          <a
+            href="#skills"
+            className="text-purple-600 rounded-full hover:scale-125 transition duration-300"
+          >
+            <FaArrowCircleDown className="text-4xl" />
+          </a>
+          <a
+            href="mailto:jimmyzheng4459@gmail.com"
+            className="text-purple-600 rounded-full hover:scale-125 transition duration-300"
+          >
+            <ImMail4 className="text-4xl" />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
