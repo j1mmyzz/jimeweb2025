@@ -24,7 +24,7 @@ const ProjectCard: React.FC<{
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-2xl shadow-md overflow-hidden transform transition duration-500 hover:scale-150"
+      className="bg-white rounded-2xl shadow-md overflow-hidden"
     >
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -60,15 +60,15 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaReact className="text-blue-500 text-2xl" />
-                  <RiNextjsFill className="text-black text-2xl" />
-                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
+                  <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/jimeweb2025"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -90,15 +90,15 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
-                  <FaHtml5 className="text-orange-600 text-2xl" />
-                  <FaCss3 className="text-blue-500 text-2xl" />
+                  <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
+                  <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
+                  <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/Memory-Match"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -116,13 +116,13 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaReact className="text-blue-500 text-2xl" />
-                  <RiNextjsFill className="text-black text-2xl" />
-                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
-                  <SiChakraui className="text-teal-500 text-2xl" />
+                  <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
+                  <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/j1mmyzz/noc-nycboe" target="_blank">
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -144,15 +144,15 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
-                  <FaHtml5 className="text-orange-600 text-2xl" />
-                  <FaCss3 className="text-blue-500 text-2xl" />
+                  <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
+                  <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
+                  <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/Empire-Cybersecurity-Game"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -174,12 +174,12 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <BiLogoJavascript className="text-yellow-500 text-2xl" />
-                  <FaHtml5 className="text-orange-600 text-2xl" />
-                  <FaCss3 className="text-blue-500 text-2xl" />
+                  <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
+                  <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
+                  <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/j1mmyzz/JimeBird" target="_blank">
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -197,13 +197,13 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                  <FaJava className="text-orange-500 text-2xl hover:scale-125" />{" "}
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/PathfindingGUI"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -225,13 +225,13 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaReact className="text-blue-500 text-2xl" />
-                  <RiNextjsFill className="text-black text-2xl" />
-                  <RiTailwindCssFill className="text-cyan-500 text-2xl" />
-                  <SiChakraui className="text-teal-500 text-2xl" />
+                  <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
+                  <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/fe-i/nutrifit" target="_blank">
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -249,13 +249,13 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                  <FaJava className="text-orange-500 text-2xl hover:scale-125" />{" "}
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/RestaurantOrderingApp"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -273,13 +273,13 @@ const Projects = () => {
             languagesAndGithub={
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
-                  <FaJava className="text-orange-500 text-2xl" />{" "}
+                  <FaJava className="text-orange-500 text-2xl hover:scale-125" />{" "}
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/VegetablesVsMummies"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl" />
+                  <FaGithub className="text-black text-2xl hover:scale-125" />
                 </a>
               </div>
             }
