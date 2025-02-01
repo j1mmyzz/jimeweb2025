@@ -23,7 +23,7 @@ const Hero = () => {
           developer, and I am currently studying Computer Science at Binghamton
           University.{" "}
         </p>
-        <div className="w-32 flex flex-row justify-between">
+        <div className="w-32 flex flex-row justify-between animate-bounce">
           <a
             href="#skills"
             className="text-purple-600 rounded-full hover:scale-125 transition duration-300"
