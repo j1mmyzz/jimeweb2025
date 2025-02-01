@@ -18,7 +18,7 @@ const Hero = () => {
       >
         <h1 className="text-5xl font-bold mb-8">Jimmy Zheng</h1>
         <p className="text-xl mb-8">Web Developer | Designer | Student</p>
-        <p className="mb-8 w-3/4">
+        <p className="mb-8 sm:w-3/5 px-10 md:w-2/5">
           Hello, I&apos;m Jimmy! I&apos;m Brooklyn based, self-taught developer,
           and I&apos;m currently studying computer science at Binghamton
           University.{" "}
