@@ -2,12 +2,25 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { SiCanva, SiChakraui, SiFlask, SiMysql } from "react-icons/si";
+import {
+  FaJava,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaPython,
+  FaFigma,
+  FaNodeJs,
+} from "react-icons/fa";
+import { BiLogoJavascript } from "react-icons/bi";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 const SkillCard: React.FC<{
   title: string;
   description: string;
   direction: string;
-}> = ({ title, description, direction }) => {
+  icons: React.ReactNode;
+}> = ({ title, description, direction, icons }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -22,7 +35,10 @@ const SkillCard: React.FC<{
       className="bg-white p-6 rounded-2xl shadow-md"
     >
       <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-      <p>{description}</p>
+      <p className="mb-2">{description}</p>
+      <div className="flex flex-row items-center text-2xl space-x-3">
+        {icons}
+      </div>
     </motion.div>
   );
 };
@@ -37,21 +53,51 @@ const Skills = () => {
             title="Web Development"
             description="Proficient in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS"
             direction="left"
+            icons={
+              <div className="flex flex-row items-center space-x-4">
+                <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
+                <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
+                <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
+                <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+                <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
+                <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
+              </div>
+            }
           />
           <SkillCard
             title="App Development"
             description="Experience with Python, Flask, Java, and Java-Swing"
             direction="right"
+            icons={
+              <div className="flex flex-row items-center space-x-4">
+                <FaPython className="text-blue-500 text-2xl hover:scale-125" />
+                <SiFlask className="text-black text-2xl hover:scale-125" />
+                <FaJava className="text-orange-500 text-2xl hover:scale-125" />
+              </div>
+            }
           />
           <SkillCard
             title="Design"
             description="Skilled in UI/UX design and Figma"
             direction="left"
+            icons={
+              <div className="flex flex-row items-center space-x-4">
+                <FaFigma className="text-black text-2xl hover:scale-125" />
+                <SiCanva className="text-cyan-500 text-2xl hover:scale-125" />
+              </div>
+            }
           />
           <SkillCard
             title="Backend Development"
             description="Familiar with Node.js, and SQL"
             direction="right"
+            icons={
+              <div className="flex flex-row items-center space-x-4">
+                <FaNodeJs className="text-green-600 text-2xl hover:scale-125" />
+                <SiMysql className="text-blue-500 text-2xl hover:scale-125" />
+              </div>
+            }
           />
         </div>
       </div>

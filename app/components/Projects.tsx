@@ -61,6 +61,7 @@ const Projects = () => {
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
                   <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+
                   <RiNextjsFill className="text-black text-2xl hover:scale-125" />
                   <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                 </div>
