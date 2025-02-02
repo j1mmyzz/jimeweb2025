@@ -45,7 +45,7 @@ const Navbar = () => {
             duration={500}
             className="text-xl cursor-pointer hover:scale-105"
           >
-            郑
+            Jimmy Zheng
           </Link>
           <div className="hidden md:flex space-x-6">
             <Link

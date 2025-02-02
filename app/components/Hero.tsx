@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { ImMail4 } from "react-icons/im";
-import { Great_Vibes } from "next/font/google";
+import { Noto_Serif } from "next/font/google";
 
-const great_vibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
+const noto_serif = Noto_Serif({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className={`${great_vibes.className} text-5xl font-bold mb-8`}>
+          <h1 className={`${noto_serif.className} text-5xl font-bold mb-8`}>
             Jimmy Zheng
           </h1>
         </motion.div>
