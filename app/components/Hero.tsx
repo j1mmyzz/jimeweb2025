@@ -28,7 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className={`text-xl mb-8`}>Web Developer | Designer | Student</p>
+          <p className={`text-2xl mb-8`}>Web Developer | Designer | Student</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
