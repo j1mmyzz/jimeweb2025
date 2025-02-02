@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { FaArrowCircleDown } from "react-icons/fa";
 import { ImMail4 } from "react-icons/im";
+import { Great_Vibes } from "next/font/google";
+
+const great_vibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 
 const Hero = () => {
   return (
@@ -16,14 +19,16 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-5xl font-bold mb-8">Jimmy Zheng</h1>
+          <h1 className={`${great_vibes.className} text-5xl font-bold mb-8`}>
+            Jimmy Zheng
+          </h1>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-xl mb-8">Web Developer | Designer | Student</p>
+          <p className={`text-xl mb-8`}>Web Developer | Designer | Student</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +36,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col justify-center items-center text-center"
         >
-          <p className="mb-9 sm:w-3/5 px-10 md:w-2/5">
+          <p className="mb-9 text-lg sm:w-3/5 px-10 md:w-2/5">
             Hello, I&apos;m Jimmy! I&apos;m a Brooklyn based, self taught
             developer, and I am currently studying Computer Science at
             Binghamton University.

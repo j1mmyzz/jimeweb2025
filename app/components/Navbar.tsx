@@ -43,16 +43,16 @@ const Navbar = () => {
             to="hero"
             smooth={true}
             duration={500}
-            className="text-2xl font-bold cursor-pointer hover:scale-105"
+            className="text-xl cursor-pointer hover:scale-105"
           >
-            Jimmy Zheng
+            郑
           </Link>
           <div className="hidden md:flex space-x-6">
             <Link
               to="skills"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer"
+              className="hover:scale-105 cursor-pointer size-xl"
             >
               Skills
             </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
               to="experience"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer"
+              className="hover:scale-105 cursor-pointer size-xl"
             >
               Experience
             </Link>
@@ -68,12 +68,12 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer  "
+              className="hover:scale-105 cursor-pointer size-xl"
             >
               Projects
             </Link>
             <a
-              className="hover:scale-105 cursor-pointer  "
+              className="hover:scale-105 cursor-pointer size-xl"
               href="https://drive.google.com/file/d/1h-WT08z5IdUqxzDKr8aivj8WeeKyQObR/view"
               target="_blank"
             >
