@@ -24,7 +24,7 @@ const ExperienceItem: React.FC<{
       className="mb-8"
     >
       <h3 className="text-2xl font-semibold">{title}</h3>
-      <p className="text-purple-600">{company}</p>
+      <p className="text-purple-700">{company}</p>
       <p className="text-sm text-gray-300 mb-2">{period}</p>
       <p>{description}</p>
     </motion.div>

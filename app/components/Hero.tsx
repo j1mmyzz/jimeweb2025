@@ -45,13 +45,13 @@ const Hero = () => {
           <div className="w-32 flex flex-row justify-between animate-bounce">
             <a
               href="#skills"
-              className="text-purple-900 rounded-full hover:scale-125 transition duration-300"
+              className="text-purple-700 rounded-full hover:scale-125 transition duration-300"
             >
               <FaArrowCircleDown className="text-4xl" />
             </a>
             <a
               href="mailto:jimmyzheng4459@gmail.com"
-              className="text-purple-900 rounded-full hover:scale-125 transition duration-300"
+              className="text-purple-700 rounded-full hover:scale-125 transition duration-300"
             >
               <ImMail4 className="text-4xl" />
             </a>

@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-white py-8 border-t border-gridColor">
+    <footer className="bg-slate-950 text-white py-6 border-t border-gridColor">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p>
