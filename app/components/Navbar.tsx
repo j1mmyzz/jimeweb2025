@@ -50,13 +50,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-purple-800 text-white shadow-md"
-          : "bg-transparent text-purple-900"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-950 text-white border-b border-gridColor">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link
@@ -72,7 +66,7 @@ const Navbar = () => {
               to="skills"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer"
             >
               Skills
             </Link>
@@ -80,7 +74,7 @@ const Navbar = () => {
               to="experience"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer"
             >
               Experience
             </Link>
@@ -88,12 +82,12 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="hover:scale-105 cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer  "
             >
               Projects
             </Link>
             <a
-              className="hover:scale-105 cursor-pointer hover:text-purple-300"
+              className="hover:scale-105 cursor-pointer  "
               href="https://drive.google.com/file/d/1h-WT08z5IdUqxzDKr8aivj8WeeKyQObR/view"
               target="_blank"
             >
@@ -132,7 +126,7 @@ const Navbar = () => {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="md:hidden bg-purple-800 text-white"
+            className="md:hidden bg-slate-950 text-white bg-opacity-75 shadow-2xl"
           >
             <div className="container mx-auto px-6 py-4">
               <motion.div variants={menuItemVariants}>
@@ -140,7 +134,7 @@ const Navbar = () => {
                   to="skills"
                   smooth={true}
                   duration={500}
-                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
                   Skills
@@ -151,7 +145,7 @@ const Navbar = () => {
                   to="experience"
                   smooth={true}
                   duration={500}
-                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
                   Experience
@@ -162,7 +156,7 @@ const Navbar = () => {
                   to="projects"
                   smooth={true}
                   duration={500}
-                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
                   Projects
@@ -170,7 +164,7 @@ const Navbar = () => {
               </motion.div>
               <motion.div variants={menuItemVariants}>
                 <a
-                  className="hover:scale-105 block py-2 cursor-pointer hover:text-purple-300"
+                  className="hover:scale-105 block py-2 cursor-pointer  "
                   href="https://drive.google.com/file/d/1h-WT08z5IdUqxzDKr8aivj8WeeKyQObR/view"
                   target="_blank"
                 >

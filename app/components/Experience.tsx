@@ -25,7 +25,7 @@ const ExperienceItem: React.FC<{
     >
       <h3 className="text-2xl font-semibold">{title}</h3>
       <p className="text-purple-600">{company}</p>
-      <p className="text-sm text-gray-600 mb-2">{period}</p>
+      <p className="text-sm text-gray-300 mb-2">{period}</p>
       <p>{description}</p>
     </motion.div>
   );
@@ -33,7 +33,7 @@ const ExperienceItem: React.FC<{
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-purple-100">
+    <section id="experience" className="py-20">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Experience</h2>
         <div className="max-w-2xl mx-auto">

@@ -51,6 +51,7 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        gridColor: "#0f1321", // Grid Color
       },
       borderRadius: {
         lg: "var(--radius)",

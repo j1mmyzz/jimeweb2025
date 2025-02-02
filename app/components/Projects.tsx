@@ -24,11 +24,11 @@ const ProjectCard: React.FC<{
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-2xl shadow-md overflow-hidden"
+      className="rounded-2xl shadow-md overflow-hidden border border-white"
     >
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <div className="text-gray-600 mb-4">{description}</div>
+        <div className="mb-4">{description}</div>
         <div className="flex flex-row items-center text-2xl space-x-3">
           {languagesAndGithub}
         </div>
@@ -62,14 +62,14 @@ const Projects = () => {
                 <div className="flex flex-row items-center space-x-4">
                   <FaReact className="text-blue-500 text-2xl hover:scale-125" />
 
-                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-white text-2xl hover:scale-125" />
                   <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/jimeweb2025"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -99,7 +99,7 @@ const Projects = () => {
                   href="https://github.com/j1mmyzz/Memory-Match"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -118,12 +118,12 @@ const Projects = () => {
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
                   <FaReact className="text-blue-500 text-2xl hover:scale-125" />
-                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-white text-2xl hover:scale-125" />
                   <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                   <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/j1mmyzz/noc-nycboe" target="_blank">
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -153,7 +153,7 @@ const Projects = () => {
                   href="https://github.com/j1mmyzz/Empire-Cybersecurity-Game"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -180,7 +180,7 @@ const Projects = () => {
                   <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/j1mmyzz/JimeBird" target="_blank">
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -204,7 +204,7 @@ const Projects = () => {
                   href="https://github.com/j1mmyzz/PathfindingGUI"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -227,12 +227,12 @@ const Projects = () => {
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
                   <FaReact className="text-blue-500 text-2xl hover:scale-125" />
-                  <RiNextjsFill className="text-black text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text- white text-2xl hover:scale-125" />
                   <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                   <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/fe-i/nutrifit" target="_blank">
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -256,7 +256,7 @@ const Projects = () => {
                   href="https://github.com/j1mmyzz/RestaurantOrderingApp"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
@@ -280,7 +280,7 @@ const Projects = () => {
                   href="https://github.com/j1mmyzz/VegetablesVsMummies"
                   target="_blank"
                 >
-                  <FaGithub className="text-black text-2xl hover:scale-125" />
+                  <FaGithub className="text- white text-2xl hover:scale-125" />
                 </a>
               </div>
             }
