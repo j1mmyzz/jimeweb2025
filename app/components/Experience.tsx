@@ -41,25 +41,24 @@ const Experience = () => {
             title="Financial Automation Analyst Intern"
             company="Morgan Stanley"
             period="Feb 2024 - Jun 2024"
-            description="● Developed Excel macros using VBA, automating processes, saving my team 10+ hours of labor each week
-● Participated in a global company hackathon using Alteryx coming in 2nd and became Alteryx Core Certified
-● Cross-verified outputs generated from Alteryx Designer with manual data, ensuring accuracy & consistency"
+            description="
+            During my time at Morgan Stanley, I was on the U.S. Banks Finance team. I devleoped excel macros using Visual Basics for applications, a language I've never even heard of before my project. My macro is still being used to this day saving manual labor. I also participated in the global company hackathon placing 2nd while at the same time getting an Alteryx Designer Certification. I also did a lot of data analysis and cross-verifying information from Alteryx and manual excel files."
           />
           <ExperienceItem
             title="Software Engineer Intern"
             company="NYC Public Schools, Software Engineer Intern"
             period="Jul 2023 - Sep 2023"
-            description="● Modernized outdated internal network sites using TypeScript and Next.js for the network operations center team
-● Implemented a CSV reader using TypeScript, displaying UI using Tailwind CSS, saving ~2 hours of coding
-● Collaborated with a team on VPN Auditing projects for remote access into schools’ networks using Cisco ISE"
+            description="
+            I was on the Enterprise Management Services team at NYC Public Schools (Prev. NYC Department of Education). I mainly worked on 
+            one big project. I redesigned and modernized the network operations center team website using TypeScript and Next.js. There are built in tools
+            I made like a CSV reader using TypeScript which would display the data using Tailwind CSS. I also got security engineering training through ISC^2 and under professional mentorship."
           />
           <ExperienceItem
             title="Intern"
             company="ETA Media"
             period="Feb 2023 - May 2023"
-            description="● Led a team to design and develop a cyber security web application game that simulates real-life cyber threats
-  ● Conducted focus groups and surveys to gather data from 350+ individuals to identify key trends
-  ● Collaborated with internal teams to engage and educate clients on common cyber security threats"
+            description="
+            I was one of several interns at ETA Media where I led a team to design and develop a cyber security web application game that simulates real-life cyber threats. We also conducted focus groups and surveys to gather data from 350+ individuals to identify key trends. I also collaborated with internal teams to engage and educate clients on common cyber security threats"
           />
         </div>
       </div>

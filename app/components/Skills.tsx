@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { SiCanva, SiChakraui, SiFlask, SiMysql } from "react-icons/si";
