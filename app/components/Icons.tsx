@@ -2,13 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
 
 let icon_multiplier = 1;
-const screen_width = document.documentElement.clientWidth;
-
-console.log(icon_multiplier);
-const Icons: React.FC = () => {
-  const boxRef = useRef<HTMLDivElement | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-
+window.onload = function () {
+  const screen_width = screen.width;
   if (screen_width >= 1536) {
     icon_multiplier = 25;
   } else if (screen_width >= 1280) {
@@ -22,6 +17,11 @@ const Icons: React.FC = () => {
   } else {
     icon_multiplier = 1;
   }
+};
+console.log(icon_multiplier);
+const Icons: React.FC = () => {
+  const boxRef = useRef<HTMLDivElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     if (!boxRef.current || !canvasRef.current) return;
