@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
 
 let icon_multiplier = 1;
-let screen_width = screen.width;
+const screen_width = screen.width;
 
 if (screen_width >= 1536) {
   icon_multiplier = 25;
@@ -17,6 +17,7 @@ if (screen_width >= 1536) {
 } else {
   icon_multiplier = 1;
 }
+
 console.log(icon_multiplier);
 const Icons: React.FC = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
