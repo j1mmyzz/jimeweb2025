@@ -1,27 +1,27 @@
 import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
 
-const icon_multiplier = 1;
-// const screen_width = document.documentElement.clientWidth;
-
-// if (screen_width >= 1536) {
-//   icon_multiplier = 25;
-// } else if (screen_width >= 1280) {
-//   icon_multiplier = 8;
-// } else if (screen_width >= 1024) {
-//   icon_multiplier = 6;
-// } else if (screen_width >= 768) {
-//   icon_multiplier = 4;
-// } else if (screen_width >= 640) {
-//   icon_multiplier = 1;
-// } else {
-//   icon_multiplier = 1;
-// }
+let icon_multiplier = 1;
+const screen_width = document.documentElement.clientWidth;
 
 console.log(icon_multiplier);
 const Icons: React.FC = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  if (screen_width >= 1536) {
+    icon_multiplier = 25;
+  } else if (screen_width >= 1280) {
+    icon_multiplier = 8;
+  } else if (screen_width >= 1024) {
+    icon_multiplier = 6;
+  } else if (screen_width >= 768) {
+    icon_multiplier = 4;
+  } else if (screen_width >= 640) {
+    icon_multiplier = 1;
+  } else {
+    icon_multiplier = 1;
+  }
 
   useEffect(() => {
     if (!boxRef.current || !canvasRef.current) return;
