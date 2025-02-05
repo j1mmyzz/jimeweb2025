@@ -1,6 +1,23 @@
 import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
 
+let icon_multiplier = 1;
+let screen_width = screen.width;
+
+if (screen_width >= 1536) {
+  icon_multiplier = 25;
+} else if (screen_width >= 1280) {
+  icon_multiplier = 8;
+} else if (screen_width >= 1024) {
+  icon_multiplier = 6;
+} else if (screen_width >= 768) {
+  icon_multiplier = 4;
+} else if (screen_width >= 640) {
+  icon_multiplier = 1;
+} else {
+  icon_multiplier = 1;
+}
+console.log(icon_multiplier);
 const Icons: React.FC = () => {
   const boxRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -53,175 +70,168 @@ const Icons: React.FC = () => {
       }),
     ];
 
-    const icons = [
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/java.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/css.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/html.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/javascript.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/linux.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/nextjs.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/react.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/tailwind.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/chakra.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/python.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/flask.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/figma.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/canva.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/node.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/sql.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-      Bodies.rectangle(0, 0, 50, 50, {
-        restitution: 0.9,
-        render: {
-          sprite: {
-            texture: "/git.png",
-            yScale: 1,
-            xScale: 1,
-          },
-        },
-      }),
-    ];
+    const icons: Matter.Body[] = [];
 
+    for (let i = 0; i < icon_multiplier; i++) {
+      icons.push(
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/java.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/css.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/html.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/javascript.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/linux.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/nextjs.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/react.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/tailwind.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/chakra.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/python.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/flask.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/figma.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/canva.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/node.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        }),
+        Bodies.rectangle(0, 0, 50, 50, {
+          restitution: 0.9,
+          render: {
+            sprite: {
+              texture: "/sql.png",
+              yScale: 1,
+              xScale: 1,
+            },
+          },
+        })
+      );
+    }
     const mouse = Mouse.create(render.canvas);
     const mouseConstraint = MouseConstraint.create(engine, {
       mouse: mouse,
       constraint: {
         stiffness: 0.2,
-        render: { visible: false },
+        render: { visible: true },
       },
     });
 
