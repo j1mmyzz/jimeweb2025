@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
 
 let icon_multiplier = 1;
-const screen_width = screen.width;
+const screen_width = document.documentElement.clientWidth;
 
 if (screen_width >= 1536) {
   icon_multiplier = 25;
