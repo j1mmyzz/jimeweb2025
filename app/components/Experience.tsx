@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 const ExperienceItem: React.FC<{
   title: string;
-  company: string;
+  company: React.ReactNode;
   period: string;
   description: string;
 }> = ({ title, company, period, description }) => {
@@ -39,15 +39,45 @@ const Experience = () => {
         <div>
           <div className="max-w-2xl mx-auto">
             <ExperienceItem
+              title="STEM Tutor"
+              company={
+                <a
+                  className="hover:underline"
+                  href="https://argoprep.com/"
+                  target="_blank"
+                >
+                  ArgoPrep
+                </a>
+              }
+              period="Jul 2024 - Aug 2024"
+              description="At ArgoPrep, I was able to work with many other teachers and tutors, building my teamwork skills. I taught a class of ~12 students programming primarily in Minecraft, teaching important coding concepts like loops and functions. There was also a week where I worked with a small team to come up with business strategies in order to market our school to a wider audience."
+            />
+            <ExperienceItem
               title="Financial Automation Analyst Intern"
-              company="Morgan Stanley"
+              company={
+                <a
+                  className="hover:underline"
+                  href="https://www.morganstanley.com/"
+                  target="_blank"
+                >
+                  Morgan Stanley
+                </a>
+              }
               period="Feb 2024 - Jun 2024"
               description="
             During my time at Morgan Stanley, I was on the U.S. Banks Finance team. I devleoped excel macros using Visual Basics for applications, a language I've never even heard of before my project. My macro is still being used to this day saving manual labor. I also participated in the global company hackathon placing 2nd while at the same time getting an Alteryx Designer Certification. I also did a lot of data analysis and cross-verifying information from Alteryx and manual excel files."
             />
             <ExperienceItem
               title="Software Engineer Intern"
-              company="NYC Public Schools, Software Engineer Intern"
+              company={
+                <a
+                  className="hover:underline"
+                  href="https://www.schools.nyc.gov/"
+                  target="_blank"
+                >
+                  NYC Public Schools
+                </a>
+              }
               period="Jul 2023 - Sep 2023"
               description="
             I was on the Enterprise Management Services team at NYC Public Schools (Prev. NYC Department of Education). I mainly worked on 
@@ -56,7 +86,15 @@ const Experience = () => {
             />
             <ExperienceItem
               title="Intern"
-              company="ETA Media"
+              company={
+                <a
+                  className="hover:underline"
+                  href="https://etamedia.com/"
+                  target="_blank"
+                >
+                  ETA Media
+                </a>
+              }
               period="Feb 2023 - May 2023"
               description="
             I was one of several interns at ETA Media where I led a team to design and develop a cyber security web application game that simulates real-life cyber threats. We also conducted focus groups and surveys to gather data from 350+ individuals to identify key trends. I also collaborated with internal teams to engage and educate clients on common cyber security threats"
