@@ -115,7 +115,7 @@ const Icons: React.FC = () => {
       render.options.height!
     );
 
-    let icons = generateIcons(iconMultiplier);
+    const icons = generateIcons(iconMultiplier);
     World.add(engine.world, [...icons, ...wallsRef.current, mouseConstraint]);
 
     const repositionOutOfBoundsIcons = () => {
