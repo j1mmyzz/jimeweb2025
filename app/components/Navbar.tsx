@@ -119,7 +119,7 @@ const Navbar = () => {
                 <Link
                   to="skills"
                   smooth={true}
-                  duration={500}
+                  duration={100}
                   className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
@@ -130,7 +130,7 @@ const Navbar = () => {
                 <Link
                   to="experience"
                   smooth={true}
-                  duration={500}
+                  duration={100}
                   className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
@@ -141,7 +141,7 @@ const Navbar = () => {
                 <Link
                   to="projects"
                   smooth={true}
-                  duration={500}
+                  duration={100}
                   className="hover:scale-105 block py-2 cursor-pointer  "
                   onClick={toggleMenu}
                 >
