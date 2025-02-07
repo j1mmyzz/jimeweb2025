@@ -82,22 +82,27 @@ const Icons: React.FC = () => {
       Bodies.rectangle(width, height / 2, 20, height, { isStatic: true }),
     ];
 
-    const icons = Array.from({ length: iconMultiplier }, () =>
-      ICON_TEXTURES.map((texture) =>
-        Bodies.rectangle(
-          Math.random() * (render.options.width ?? 800),
-          0,
-          iconSize,
-          iconSize,
-          {
-            restitution: 0.9,
-            render: {
-              sprite: { texture, yScale: iconSize / 50, xScale: iconSize / 50 },
-            },
-          }
+    const generateIcons = (count: number) =>
+      Array.from({ length: count }, () =>
+        ICON_TEXTURES.map((texture) =>
+          Bodies.rectangle(
+            Math.random() * (render.options.width ?? 800),
+            Math.random() * (render.options.height ?? 600),
+            iconSize,
+            iconSize,
+            {
+              restitution: 0.9,
+              render: {
+                sprite: {
+                  texture,
+                  yScale: iconSize / 50,
+                  xScale: iconSize / 50,
+                },
+              },
+            }
+          )
         )
-      )
-    ).flat();
+      ).flat();
 
     const mouse = Mouse.create(render.canvas);
     const mouseConstraint = MouseConstraint.create(engine, {
@@ -110,6 +115,7 @@ const Icons: React.FC = () => {
       render.options.height!
     );
 
+    let icons = generateIcons(iconMultiplier);
     World.add(engine.world, [...icons, ...wallsRef.current, mouseConstraint]);
 
     const repositionOutOfBoundsIcons = () => {
@@ -123,7 +129,10 @@ const Icons: React.FC = () => {
           icon.position.y < 0 ||
           icon.position.y > height
         ) {
-          Matter.Body.setPosition(icon, { x: width / 2, y: height / 4 });
+          Matter.Body.setPosition(icon, {
+            x: Math.random() * width,
+            y: Math.random() * height,
+          });
           Matter.Body.setVelocity(icon, { x: 0, y: 0 });
         }
       });
@@ -169,9 +178,21 @@ const Icons: React.FC = () => {
     };
   }, [iconMultiplier, gravity, iconSize]);
 
+  const resetState = () => {
+    setIconMultiplier(1);
+    setGravity(1);
+    setIconSize(50);
+  };
+
   return (
     <div className="flex flex-col px-4 md:flex-row items-center md:px-32">
       <div className="w-full p-0 pr-4 flex flex-col ">
+        <button
+          className="mb-2 px-4 py-2 text-white rounded border border-white hover:bg-purple-600"
+          onClick={resetState}
+        >
+          Reset
+        </button>
         <button
           className="mb-2 px-4 py-2 text-white rounded border border-white hover:bg-purple-600"
           onClick={() => setIconMultiplier((prev) => prev + 1)}
