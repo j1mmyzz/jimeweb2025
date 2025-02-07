@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link
             to="hero"
             smooth={true}
-            duration={500}
+            duration={100}
             className="text-xl cursor-pointer hover:scale-105"
           >
             Jimmy Zheng
@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link
               to="skills"
               smooth={true}
-              duration={500}
+              duration={100}
               className="hover:scale-105 cursor-pointer size-xl"
             >
               Skills
@@ -59,7 +59,7 @@ const Navbar = () => {
             <Link
               to="experience"
               smooth={true}
-              duration={500}
+              duration={100}
               className="hover:scale-105 cursor-pointer size-xl"
             >
               Experience
@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link
               to="projects"
               smooth={true}
-              duration={500}
+              duration={100}
               className="hover:scale-105 cursor-pointer size-xl"
             >
               Projects
