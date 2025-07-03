@@ -25,14 +25,6 @@ const Footer = () => {
             >
               <FaLinkedin size={24} />
             </a>
-            <a
-              href="https://www.instagram.com/j1mmy_zzz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-300"
-            >
-              <FaInstagram size={24} />
-            </a>
           </div>
         </div>
       </div>

@@ -39,6 +39,20 @@ const Experience = () => {
         <div>
           <div className="max-w-2xl mx-auto">
             <ExperienceItem
+              title="Software Development Intern"
+              company={
+                <a
+                  className="hover:underline"
+                  href="https://www.privateequityinternational.com/institution-profiles/divino-global-holdings.html"
+                  target="_blank"
+                >
+                  Divino Global Holdings LLC
+                </a>
+              }
+              period="Jun 2025 - Present"
+              description="At Divino I developed a Python app to efficiently extract and validate 500+ company email formats using web scraping and Apollo’s API. I also conducted in-depth research on VC firms, hedge funds, and other funding sources by leveraging AI to gather and analyze data."
+            />
+            <ExperienceItem
               title="STEM Tutor"
               company={
                 <a

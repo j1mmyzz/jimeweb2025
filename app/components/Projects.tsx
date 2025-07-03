@@ -3,10 +3,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-scroll";
-import { SiChakraui } from "react-icons/si";
-import { FaGithub, FaJava, FaHtml5, FaCss3, FaReact } from "react-icons/fa";
+import { SiChakraui, SiStreamlit } from "react-icons/si";
+import {
+  FaGithub,
+  FaJava,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaPython,
+} from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const ProjectCard: React.FC<{
   title: React.ReactNode;
@@ -46,6 +54,58 @@ const Projects = () => {
           <ProjectCard
             title={
               <span>
+                <a
+                  className="no-underline hover:underline ..."
+                  href="https://hiredapp.vercel.app/"
+                  target="_blank"
+                >
+                  HiredApp
+                </a>
+              </span>
+            }
+            description="An AI powered interview simulator using Google Gemini"
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaReact className="text-blue-500 text-2xl hover:scale-125" />
+                  <RiNextjsFill className="text-white text-2xl hover:scale-125" />
+                  <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
+                  <IoLogoFirebase className="text-orange-500 text-2xl hover:scale-125" />
+                </div>
+                <a href="https://github.com/j1mmyzz/HiredApp" target="_blank">
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
+                </a>
+              </div>
+            }
+          />
+          <ProjectCard
+            title={
+              <span>
+                <a
+                  className="no-underline hover:underline ..."
+                  href="https://finsenti.streamlit.app/"
+                  target="_blank"
+                >
+                  FinSenti
+                </a>
+              </span>
+            }
+            description="A sentiment analysis app using Python and NewsAPI, leveraging NLP with TextBlob to classify financial headlines"
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaPython className="text-blue-500 text-2xl hover:scale-125" />
+                  <SiStreamlit className="text-red-500 text-2xl hover:scale-125" />
+                </div>
+                <a href="https://github.com/j1mmyzz/FinSenti" target="_blank">
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
+                </a>
+              </div>
+            }
+          />
+          <ProjectCard
+            title={
+              <span>
                 <Link
                   to="hero"
                   smooth={true}
@@ -61,42 +121,11 @@ const Projects = () => {
               <div className="flex flex-row items-center justify-between w-full">
                 <div className="flex flex-row items-center space-x-4">
                   <FaReact className="text-blue-500 text-2xl hover:scale-125" />
-
                   <RiNextjsFill className="text-white text-2xl hover:scale-125" />
                   <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/jimeweb2025"
-                  target="_blank"
-                >
-                  <FaGithub className="text-white text-2xl hover:scale-125" />
-                </a>
-              </div>
-            }
-          />
-
-          <ProjectCard
-            title={
-              <span>
-                <a
-                  className="no-underline hover:underline ..."
-                  href="https://jimematch.vercel.app/"
-                  target="_blank"
-                >
-                  Memory Match
-                </a>
-              </span>
-            }
-            description="A small memory game created for my web development class in high school."
-            languagesAndGithub={
-              <div className="flex flex-row items-center justify-between w-full">
-                <div className="flex flex-row items-center space-x-4">
-                  <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
-                  <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
-                  <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
-                </div>
-                <a
-                  href="https://github.com/j1mmyzz/Memory-Match"
                   target="_blank"
                 >
                   <FaGithub className="text-white text-2xl hover:scale-125" />
@@ -134,36 +163,6 @@ const Projects = () => {
               <span>
                 <a
                   className="no-underline hover:underline ..."
-                  href="https://empire-cybersecurity-game.vercel.app/"
-                  target="_blank"
-                >
-                  Empire Cybersecurity Game
-                </a>
-              </span>
-            }
-            description="A simple HTML page developed for my internship at ETA Media, aimed to educate users on basic cybersecurity and online safety."
-            languagesAndGithub={
-              <div className="flex flex-row items-center justify-between w-full">
-                <div className="flex flex-row items-center space-x-4">
-                  <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
-                  <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
-                  <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
-                </div>
-                <a
-                  href="https://github.com/j1mmyzz/Empire-Cybersecurity-Game"
-                  target="_blank"
-                >
-                  <FaGithub className="text- white text-2xl hover:scale-125" />
-                </a>
-              </div>
-            }
-          />
-
-          <ProjectCard
-            title={
-              <span>
-                <a
-                  className="no-underline hover:underline ..."
                   href="https://jimebird.vercel.app/"
                   target="_blank"
                 >
@@ -178,6 +177,7 @@ const Projects = () => {
                   <BiLogoJavascript className="text-yellow-500 text-2xl hover:scale-125" />
                   <FaHtml5 className="text-orange-600 text-2xl hover:scale-125" />
                   <FaCss3 className="text-blue-500 text-2xl hover:scale-125" />
+                  <IoLogoFirebase className="text-orange-500 text-2xl hover:scale-125" />
                 </div>
                 <a href="https://github.com/j1mmyzz/JimeBird" target="_blank">
                   <FaGithub className="text- white text-2xl hover:scale-125" />

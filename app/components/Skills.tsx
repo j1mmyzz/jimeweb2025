@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const SkillCard: React.FC<{
   title: string;
@@ -92,13 +93,14 @@ const Skills = () => {
           />
           <SkillCard
             title="Backend Development"
-            description="Familiar with Node.js, SQL, and Linux"
+            description="Familiar with Node.js, SQL, Linux, and Firebase"
             direction="right"
             icons={
               <div className="flex flex-row items-center space-x-4">
                 <FaNodeJs className="text-green-600 text-2xl hover:scale-125" />
                 <SiMysql className="text-blue-500 text-2xl hover:scale-125" />
                 <FaLinux className="text-white text-2xl hover:scale-125" />
+                <IoLogoFirebase className="text-orange-500 text-2xl hover:scale-125" />
               </div>
             }
           />

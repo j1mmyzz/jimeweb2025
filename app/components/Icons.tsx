@@ -18,7 +18,8 @@ const ICON_TEXTURES = [
   "/canva.png",
   "/node.png",
   "/sql.png",
-  "git.png",
+  "/git.png",
+  "/firebase.png",
 ];
 
 const Icons: React.FC = () => {
