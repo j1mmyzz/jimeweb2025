@@ -29,7 +29,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className={`text-xl mb-8`}>
-            Software Engineer | App Development | Student
+            Software Engineer | AI Enthusiast | Student
           </p>
         </motion.div>
         <motion.div
