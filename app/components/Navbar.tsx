@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
             <a
               className="hover:scale-105 cursor-pointer size-xl"
-              href="https://drive.google.com/file/d/1Z0lfv9JKZyNBeCkAiVNrUdnhV4YqiT6P/view?usp=sharing"
+              href="https://drive.google.com/file/d/1F0GTfv8Pcv1SPrb1hRqGlGDj_yK8YLhH/view?usp=sharing"
               target="_blank"
             >
               Resume
@@ -151,7 +151,7 @@ const Navbar = () => {
               <motion.div variants={menuItemVariants}>
                 <a
                   className="hover:scale-105 block py-2 cursor-pointer  "
-                  href="https://drive.google.com/file/d/1Z0lfv9JKZyNBeCkAiVNrUdnhV4YqiT6P/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1F0GTfv8Pcv1SPrb1hRqGlGDj_yK8YLhH/view?usp=sharing"
                   target="_blank"
                 >
                   Resume
