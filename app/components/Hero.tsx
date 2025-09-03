@@ -28,9 +28,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className={`text-xl mb-8`}>
-            Software Engineer | AI Enthusiast | Student
-          </p>
+          <p className={`text-xl mb-8`}>Software Engineer & Student</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,7 +37,7 @@ const Hero = () => {
           className="flex flex-col justify-center items-center text-center"
         >
           <p className="mb-9 text-lg sm:w-3/5 px-10 md:w-2/5">
-            Hello, I&apos;m Jimmy! I&apos;m a Brooklyn based, self taught
+            Hello, I&apos;m Jimmy! I&apos;m a NYC based, mostly self taught
             developer, and I am currently studying Computer Science at
             Binghamton University.
           </p>
