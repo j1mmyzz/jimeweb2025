@@ -39,6 +39,14 @@ const Experience = () => {
         <div>
           <div className="max-w-2xl mx-auto">
             <ExperienceItem
+              title="Private STEM Tutor "
+              company={
+                <a className="hover:underline">Freelance Private Clients</a>
+              }
+              period="Dec 2025 - Present"
+              description="As a private STEM tutor, I work with students to improve their critical thinking and problem solving skills. I teach a wide range of subjects from algebra 1 to AP Calculus BC. I also teach a course in Minecraft Education with in-game blocked based coding."
+            />
+            <ExperienceItem
               title="Software Development Intern"
               company={
                 <a
@@ -49,7 +57,7 @@ const Experience = () => {
                   Divino Global Holdings LLC
                 </a>
               }
-              period="Jun 2025 - Present"
+              period="Jun 2025 - Aug 2025"
               description="At Divino I developed a Python app to efficiently extract and validate 500+ company email formats using web scraping and Apollo’s API. I also conducted in-depth research on VC firms, hedge funds, and other funding sources by leveraging AI to gather and analyze data."
             />
             <ExperienceItem
