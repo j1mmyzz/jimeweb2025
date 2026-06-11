@@ -72,13 +72,6 @@ const Navbar = () => {
             >
               Projects
             </Link>
-            <a
-              className="hover:scale-105 cursor-pointer size-xl"
-              href="https://drive.google.com/file/d/1uLn19avNQk31aDGEjShjURZX6RTgFELC/view?usp=sharing"
-              target="_blank"
-            >
-              Resume
-            </a>
           </div>
           <div className="md:hidden">
             <button
@@ -147,15 +140,6 @@ const Navbar = () => {
                 >
                   Projects
                 </Link>
-              </motion.div>
-              <motion.div variants={menuItemVariants}>
-                <a
-                  className="hover:scale-105 block py-2 cursor-pointer  "
-                  href="https://drive.google.com/file/d/1uLn19avNQk31aDGEjShjURZX6RTgFELC/view?usp=sharing"
-                  target="_blank"
-                >
-                  Resume
-                </a>
               </motion.div>
             </div>
           </motion.div>

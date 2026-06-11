@@ -11,6 +11,7 @@ import {
   FaCss3,
   FaReact,
   FaPython,
+  FaSwift,
 } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
@@ -51,6 +52,24 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ProjectCard
+            title={
+              <span>
+                <a className="no-underline hover:underline ...">RentProof</a>
+              </span>
+            }
+            description="A SwiftUI iOS app that helps college students manage off-campus move-ins by managing AI-powered lease reviews, security deposit payments, rent reminders, and room-by-room walkthrough evidence with OpenAI API and Supabase integration."
+            languagesAndGithub={
+              <div className="flex flex-row items-center justify-between w-full">
+                <div className="flex flex-row items-center space-x-4">
+                  <FaSwift className="text-orange-500 text-2xl hover:scale-125" />
+                </div>
+                <a href="https://github.com/j1mmyzz/RentProof" target="_blank">
+                  <FaGithub className="text-white text-2xl hover:scale-125" />
+                </a>
+              </div>
+            }
+          />
           <ProjectCard
             title={
               <span>
@@ -254,30 +273,6 @@ const Projects = () => {
                 </div>
                 <a
                   href="https://github.com/j1mmyzz/RestaurantOrderingApp"
-                  target="_blank"
-                >
-                  <FaGithub className="text- white text-2xl hover:scale-125" />
-                </a>
-              </div>
-            }
-          />
-
-          <ProjectCard
-            title={
-              <span>
-                <a className="no-underline hover:underline ..." target="_blank">
-                  Vegetables Vs. Mummies
-                </a>
-              </span>
-            }
-            description="Plants Vs. Zombies clone made with Java Swing."
-            languagesAndGithub={
-              <div className="flex flex-row items-center justify-between w-full">
-                <div className="flex flex-row items-center space-x-4">
-                  <FaJava className="text-orange-500 text-2xl hover:scale-125" />{" "}
-                </div>
-                <a
-                  href="https://github.com/j1mmyzz/VegetablesVsMummies"
                   target="_blank"
                 >
                   <FaGithub className="text- white text-2xl hover:scale-125" />

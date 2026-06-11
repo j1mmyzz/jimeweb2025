@@ -39,10 +39,30 @@ const Experience = () => {
         <div>
           <div className="max-w-2xl mx-auto">
             <ExperienceItem
-              title="Private STEM Tutor "
+              title="AI/ML Ignite Fellow"
+              company={<a className="hover:underline">AI4ALL</a>}
+              period="May 2026 - Present"
+              description="Experience with Scikit-learn, Matplotlib, Numpy, and Pandas libraries"
+            />
+            <ExperienceItem
+              title="Software Engineer Intern"
               company={
-                <a className="hover:underline">Freelance Private Clients</a>
+                <a className="hover:underline">
+                  Binghamton University Information Technology Services
+                </a>
               }
+              period="May 2026 - Present"
+              description="Redesinging and writing new scripts for students' course registration. Refactoring KShell and Oracle SQL packages into Python for better performance. I'm also working on the parking system for the university for all staff and students."
+            />
+            <ExperienceItem
+              title="AI Fellow"
+              company={<a className="hover:underline">Handshake</a>}
+              period="Apr 2026 - Present"
+              description="Designing structured prompt-rubric pairs targeting complex tasks, generating training data to guide reinforcement learning and auditing LLM performance through RLHF prompt engineering, hand annotation of responses, and analysis of model outputs."
+            />
+            <ExperienceItem
+              title="Private STEM Tutor"
+              company={<a className="hover:underline">Private Client</a>}
               period="Dec 2025 - Present"
               description="As a private STEM tutor, I work with students to improve their critical thinking and problem solving skills. I teach a wide range of subjects from algebra 1 to AP Calculus BC. I also teach a course in Minecraft Education with in-game blocked based coding."
             />

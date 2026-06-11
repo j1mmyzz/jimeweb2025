@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { SiCanva, SiChakraui, SiFlask, SiMysql } from "react-icons/si";
+import { SiCanva, SiFlask, SiMysql } from "react-icons/si";
 import {
   FaJava,
   FaHtml5,
@@ -63,7 +63,8 @@ const Skills = () => {
                 <FaReact className="text-blue-500 text-2xl hover:scale-125" />
                 <RiNextjsFill className="text-white text-2xl hover:scale-125" />
                 <RiTailwindCssFill className="text-cyan-500 text-2xl hover:scale-125" />
-                <SiChakraui className="text-teal-500 text-2xl hover:scale-125" />
+                <FaFigma className="text-white text-2xl hover:scale-125" />
+                <SiCanva className="text-cyan-500 text-2xl hover:scale-125" />
               </div>
             }
           />
@@ -81,13 +82,12 @@ const Skills = () => {
             }
           />
           <SkillCard
-            title="Design"
-            description="Skilled in UI/UX design and Figma"
+            title="AI/ML and Data Analysis"
+            description="Learning basic ML models and data handling with Python"
             direction="left"
             icons={
               <div className="flex flex-row items-center space-x-4">
-                <FaFigma className="text-white text-2xl hover:scale-125" />
-                <SiCanva className="text-cyan-500 text-2xl hover:scale-125" />
+                <FaPython className="text-blue-500 text-2xl hover:scale-125" />
               </div>
             }
           />
